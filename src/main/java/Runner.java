@@ -1,10 +1,8 @@
-import java.util.Scanner;
-
 public class Runner {
     public static void main(String[] args) {
-        GirisEkrani.acilisEkrani();
-        OturumAc oturumAc= new OturumAc();
-        KayitOl kayitOl=new KayitOl();
+        LoginScreen.startScreen();
+        LogIn oturumAc= new LogIn();
+        Register kayitOl=new Register();
 
 
     }

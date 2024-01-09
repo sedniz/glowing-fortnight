@@ -2,11 +2,11 @@ import java.sql.*;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class KayitOl {
+public class Register {
     private static final String URL = "jdbc:postgresql://localhost:5432/site";
     private static final String USER = "sitemanager";
     private static final String PASSWORD = "password";
-    static void kayit(Scanner scanner) {
+    static void register(Scanner scanner) {
 
         System.out.println("Enter your name: ");
         String name = scanner.next();
@@ -43,7 +43,7 @@ public class KayitOl {
 
 
                 if (repeat.equalsIgnoreCase("e")){
-                    GirisEkrani.acilisEkrani();
+                    LoginScreen.startScreen();
                 }else if (repeat.equalsIgnoreCase("h")){
                     System.out.println("Have a nice day...");
                 }

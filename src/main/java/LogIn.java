@@ -2,13 +2,13 @@ import java.sql.*;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class OturumAc {
+public class LogIn {
 
     private static final String URL = "jdbc:postgresql://localhost:5432/site";
     private static final String USER = "sitemanager";
     private static final String PASSWORD = "password";
 
-    public static void oturumAc(Scanner scanner) {
+    public static void logIn(Scanner scanner) {
 
 
 
@@ -42,7 +42,7 @@ public class OturumAc {
                         System.out.println("Username or password is incorrect, try again.");
                         prst.close();
                         conn.close();
-                        GirisEkrani.acilisEkrani();
+                        LoginScreen.startScreen();
 
                     }
                 }

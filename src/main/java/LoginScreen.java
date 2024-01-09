@@ -1,9 +1,8 @@
-import java.util.Objects;
 import java.util.Scanner;
 
-public class GirisEkrani {
+public class LoginScreen {
 
-    public static void acilisEkrani() {
+    public static void startScreen() {
 
         System.out.println("**************************");
         System.out.println("Press '1' to log in");
@@ -13,9 +12,9 @@ public class GirisEkrani {
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         if (choice == 1) {
-            OturumAc.oturumAc(scanner);
+            LogIn.logIn(scanner);
         } else if (choice == 2) {
-            KayitOl.kayit(scanner);
+            Register.register(scanner);
 
         } else if (choice == 0) {
             System.out.println("Application exited");
